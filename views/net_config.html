@@ -1,0 +1,26 @@
+<h3>Конфигурация сети</h3>
+<div class="row" ng-init="getData(['netConfig'])">
+    <div class="large-12 columns">
+        <label>IP 
+            <input ng-model="rootForms.netConfig.ip" type="text" placeholder="__.__.__.__" />
+        </label>
+    </div>
+    <div class="large-12 columns">
+        <label>Маска
+            <input ng-model="rootForms.netConfig.maska" type="text" placeholder="__.__.__.__" />
+        </label>
+    </div>
+    <div class="large-12 columns">
+        <label>Шлюз
+            <input ng-model="rootForms.netConfig.gateway" type="text" placeholder="__.__.__.__" />
+        </label>
+    </div>
+    <div class="large-12 columns">
+        <label>DNS
+            <input ng-model="rootForms.netConfig.dns" type="text" placeholder="__.__.__.__" />
+        </label>
+    </div>
+    <div class="large-12 columns">
+        <div ng-click="setData(['netConfig'])" role="button" tabindex="0" class="button">Сохранить</div>
+    </div>
+</div>

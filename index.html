@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+
+        <!--        <link href="css/normalize.css" rel="stylesheet">-->
+        <link href="css/foundation.min.css" rel="stylesheet">
+        <link href="css/css.css" rel="stylesheet">
+
+    </head>
+    <body ng-controller="main">
+
+        <nav class="top-bar" data-topbar role="navigation">
+            <ul class="title-area">
+                <li class="name">
+                    <h1><a href="#">Панель управления</a></h1>
+                </li>
+                <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+            </ul>
+
+            <section class="top-bar-section">
+                <!-- Right Nav Section -->
+                <ul class="right">
+                    <li><a href="#">Выход</a></li>
+
+                </ul>
+
+                <!-- Left Nav Section -->
+                <ul class="left">
+                    <li class="has-dropdown">
+                        <a href="#">Настройки</a>
+                        <ul class="dropdown">
+                            <li><a ui-sref="views({view:'test'})">Страница №1</a></li>
+                            <li><a ui-sref="views({view:'net_config'})">Конфигурация сети</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+
+
+        <section role="main" class="scroll-container">
+            <div class="row "  >
+
+                <div class="large-12 medium-12 columns" ui-view></div>
+
+            </div> 
+        </section>
+
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/foundation.min.js"></script>
+        <script src="js/vendor/angular.min.js"></script>
+        <script src="js/vendor/angular-ui-router.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controlers.js"></script>
+        <script>
+            $(document).foundation();
+        </script>
+
+    </body>
+</html>

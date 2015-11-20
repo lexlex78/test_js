@@ -1,0 +1,4 @@
+netConfig.ip=10.10.100.245
+netConfig.maska=255.255.255.0
+netConfig.gateway=10.10.100.255
+netConfig.dns=8.8.8.8
