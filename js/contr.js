@@ -43,7 +43,7 @@ app.controller('main', function ($scope,$http) {
         
         for (var i=0;blocks.length>i;i++){
             eval ('var item = $scope.rootForms.' +blocks[i]);
-            console.log(item);
+            //console.log(item);
             for (key in item) {
                 data += blocks[i] + '.' + key +"=" + item[key] + "\n";
             }
