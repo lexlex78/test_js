@@ -3,6 +3,8 @@ app.controller('main', function ($scope,$http) {
     $scope.rootForms = {}
 
     $scope.getData = function (blocks) {
+        
+        //$(document).foundation('abide', 'reflow');
 
         $http({
             method: 'POST',
