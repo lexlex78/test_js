@@ -7,7 +7,7 @@
         <title></title>
 
         <!--        <link href="css/normalize.css" rel="stylesheet">-->
-        <link href="css/foundation.min.css" rel="stylesheet">
+        <link href="css/found.css" rel="stylesheet">
         <link href="css/css.css" rel="stylesheet">
 
     </head>
@@ -44,21 +44,29 @@
 
 
         <section role="main" class="scroll-container">
+
             <div class="row "  >
-
                 <div class="large-12 medium-12 columns" ui-view></div>
-
             </div> 
+
+            <div id="Modal" class="reveal-modal" data-reveal aria-labelledby="firstModalTitle" aria-hidden="true" role="dialog">
+<!--                <h2 id="firstModalTitle">This is a modal.</h2>-->
+                <p>{{message}}</p>
+                <a class="close-reveal-modal" aria-label="Закрыть">&#215;</a>
+            </div>
+
         </section>
 
+
+
         <script src="js/vendor/jquery.js"></script>
-        <script src="js/vendor/foundation.min.js"></script>
-        <script src="js/vendor/angular.min.js"></script>
-        <script src="js/vendor/angular-ui-router.min.js"></script>
+        <script src="js/vendor/found.js"></script>
+        <script src="js/vendor/a.js"></script>
+        <script src="js/vendor/a-ui-r.js"></script>
         <script src="js/app.js"></script>
-        <script src="js/controlers.js"></script>
+        <script src="js/contr.js"></script>
         <script>
-            $(document).foundation();
+                $(document).foundation();
         </script>
 
     </body>

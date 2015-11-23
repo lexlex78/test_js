@@ -31,6 +31,9 @@ app.controller('main', function ($scope,$http) {
             
         }, function errorCallback(response) {
             
+             $scope.message = 'Ошибка! (getData) - ' + response.status;
+            $('#Modal').foundation('reveal', 'open');
+            
         });
 
     }
@@ -54,6 +57,9 @@ app.controller('main', function ($scope,$http) {
             
         }, function errorCallback(response) {
             
+            $scope.message = 'Ошибка! (setData) - ' + response.status;
+            $('#Modal').foundation('reveal', 'open');
+                        
         });
 
     }
