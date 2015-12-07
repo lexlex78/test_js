@@ -1,0 +1,43 @@
+<h3>Конфигурация сети</h3>
+<div  class="row" ng-init="getData(['com1','com2'])">
+    <div class="large-12 columns">
+        <label>IP 
+
+            <select ng-model="rootForms.com1.ip">
+
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="aaa">bbb</option>
+
+            </select>
+            
+        </label>
+
+    </div>
+    <div class="large-6 columns">
+        <label>Маска
+            <input ng-model="rootForms.com1.maska" type="text" placeholder="__.__.__.__" />
+        </label>
+    </div>
+    <div class="large-6 columns">
+        <label>Маска
+            <input ng-model="rootForms.com1.maska" type="text" placeholder="__.__.__.__" />
+        </label>
+    </div>
+    <div class="large-12 columns">
+        <div ng-click="setData(['com1'])" role="button" tabindex="0" class="button">Сохранить</div>
+    </div>
+    <div class="large-12 columns">
+        <label>Шлюз
+            <input ng-model="rootForms.com2.gateway" type="text" placeholder="__.__.__.__" />
+        </label>
+    </div>
+    <div class="large-12 columns">
+        <label>DNS
+            <input ng-model="rootForms.com2.dns" type="text" placeholder="__.__.__.__" />
+        </label>
+    </div>
+    <div class="large-12 columns">
+        <div ng-click="setData(['com2'])" role="button" tabindex="0" class="button">Сохранить</div>
+    </div>
+</div>
